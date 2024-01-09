@@ -1,0 +1,441 @@
+/* ELEMENTS */
+
+:root {
+    --color-green: #38AF90;
+    --color-white: #FFFFFF;
+    --color-gray: #797979;
+    --color-news: #F0F0F0;
+    --color-red: #DD7E92;
+    --color-singup: #C4C4C4;
+    --color-footer: #383838;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* CLASSES, IDS */
+
+a, a:hover {
+    color: unset;
+    text-decoration: none;
+}
+
+header {
+    background-color: var(--color-green);
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-title {
+    color: var(--color-white);
+    font-size: 18px;
+    margin: 0 0 0 10px;
+}
+
+.menu-topic img {
+    width: 62px;
+    height: 62px;
+    margin: 0 10px 0 0;
+}
+
+.menu-topic {
+    display: flex;
+    align-items: center;
+}
+
+.menu-topic ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.menu-topic a {
+    color: var(--color-white);
+    font-size: 14px;
+    margin: 0 29px 0 0;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.latest-news {
+    color: var(--color-gray);
+    font-size: 1.5rem;
+    margin: 40px 0 8px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.news-container {
+    width: 300px;
+    height: 493px;
+    margin: 0 0 28px 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: var(--color-news);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.news-header {
+    margin: 0 12px 0 12px;
+}
+
+.news-header h3 {
+    color: var(--color-green);
+    font-size: 1rem;
+    margin: 16px 0 3px 0;
+}
+
+.news-header h4 {
+    color: var(--color-gray);
+    font-size: 12px;
+    border-bottom: 1px solid var(--color-green);
+    margin: 0;
+}
+
+.news-header p {
+    color: var(--color-green);
+    font-size: 10px;
+    margin: 1px 0 0 0;
+}
+
+.news-information {
+    margin: 0 12px 0 12px;
+}
+
+.news-information p {
+    color: var(--color-gray);
+    font-size: 10px;
+}
+
+.news-information a {
+    font-size: 14px;
+    color: var(--color-red);
+}
+.button-end {
+    margin: 0;
+}
+
+.button-end button {
+    width: 244px;
+    height: 67px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--color-red);
+    font-size: 18px;
+    color: var(--color-white);
+}
+
+.games {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.games-title {
+    font-size: 1.5rem;
+    color: var(--color-green);
+    margin: 80px 0 0 0;
+}
+
+.games-card {
+    width: 300px;
+    height: 326px;
+    border-radius: 8px;
+    margin: 28px 0 0 0;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.games-picture img {
+    width: 300px;
+    border-radius: 8px 8px 0 0;
+}
+
+.games-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.games-text h3 {
+    color: var(--color-gray);
+    font-size: 18px;
+    margin: 27px 0 0 0;
+}
+
+.games-text p {
+    color: var(--color-gray);
+    font-size: 12px;
+    margin: 0;
+}
+
+.games-text span {
+    color: var(--color-green);
+    font-size: 14px;
+}
+
+.games-score p {
+    color: var(--color-green);
+    font-size: 36px;
+    margin: 13px 0 0 0;
+}
+
+.singup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.singup-form {
+    color: var(--color-gray);
+    font-size: 1.5rem;
+    margin: 80px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.singup-container {
+    width: 300px;
+    height: 603px;
+    border-radius: 4px;
+    background-color: var(--color-news);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.singup-name {
+    display: flex;
+    justify-content: center;
+}
+
+.singup-name input {
+    width: 280px;
+    height: 50px;
+    margin: 52px 0 0 0;
+    border: 1px solid var(--color-gray);
+    padding: 13px 0 13px 22px;
+    border-radius: 4px;
+}
+
+.singup-email {
+    display: flex;
+    justify-content: center;
+}
+
+.singup-email input {
+    width: 280px;
+    height: 50px;
+    margin: 20px 0 0 0;
+    border: 1px solid var(--color-gray);
+    padding: 13px 0 13px 22px;
+    border-radius: 4px;
+}
+
+.games-quest {
+    color: var(--color-gray);
+    font-size: 16px;
+    margin: 20px 0 0 10px;
+}
+
+.games-platform {
+    color: var(--color-gray);
+    font-size: 16px;
+    margin: 6px 0 0 8px;
+}
+
+.games-class {
+    display: flex;
+    align-items: center;
+}
+
+.games-platform input {
+    width: 23px;
+    height: 23px;
+}
+
+.games-checkbox {
+    color: var(--color-gray);
+    font-size: 16px;
+    margin: 35px 0 0 8px;
+    display: flex;
+    align-items: center;
+}
+
+.games-checkbox input {
+    width: 23px;
+    height: 23px;
+}
+
+.games-buttom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 47px 0 0 0;
+}
+
+.games-buttom input {
+    width: 244px;
+    height: 67px;
+    font-size: 18px;
+    margin: 20px 0 0 0;
+    border: none;
+    border-radius: 8px;
+    border: 2px solid var(--color-red);
+}
+
+.games-submit {
+    background-color: var(--color-red);
+    color: var(--color-white);
+}
+
+.games-reset {
+    background-color: var(--color-white);
+    color: var(--color-red);
+}
+
+footer {
+    height: 320px;
+    background-color: var(--color-footer);
+    font-size: 14px;
+    color: var(--color-white);
+    display: flex;
+ 
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-information {
+    margin: 57px 0 0 0;
+}
+
+@media(max-width: 576px) {
+
+    header .menu-topic ul{display:none;}
+
+}
+
+@media(min-width: 768px) {
+
+    .menu-title {
+        font-size: 1.5rem;
+    }
+
+    .latest-news {
+        font-size: 36px;
+    }
+
+    .news-container {
+        width: 990px;
+        height: 247px;
+        margin: 0 0 40px 0;
+    }
+
+    .news-header h3 {
+        font-size: 1.5rem;
+    }
+
+    .news-header h4 {
+        font-size: 1rem;
+    }
+
+    .games-title {
+        font-size: 36px;
+        margin: 92px 0 0 0;
+    }
+
+    .games {
+        display: flex;
+        justify-content: center;
+    }
+
+    .games-information {
+        display: flex;
+        justify-content: center;
+    }
+
+    .games-card {
+        margin: 73px 30px 0 0;
+    }
+
+    .singup-form {
+        font-size: 36px;
+        margin: 109px 0 0 0;
+    }
+
+    .singup-container {
+        width: 790px;
+        height: 522px;
+    }
+
+    .singup-name input {
+        width: 642px;
+    }
+    .singup-email input {
+        width: 642px;
+    }
+
+    .games-quest {
+        margin: 20px 0 0 72px;
+    }
+
+    .games-platform {
+        margin: 6px 0 0 74px;
+    }
+
+    .games-checkbox {
+        margin: 35px 0 0 70px;
+    }
+
+    .games-buttom {
+        display: flex;
+        flex-direction: row;
+        margin: 38px 125px 38px 125px;
+    }
+
+    .games-buttom input {
+        margin: 20px 52px 0 0;
+    }
+
+    footer {
+        height: 190px;
+        margin: 0 105px;
+    }
+
+    .footer-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-information {
+        margin: 0;
+    }
+
+}
